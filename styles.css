@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'DS-Digital', sans-serif;
+    border-radius: 0.3vmax;
+    background-color: #F1F0FF;
+}
+
+header{
+    text-align: center;
+    font-size: 3.0vmax;
+    color: #443266;
+}
+
+main{
+    margin: auto;
+    padding: 0.5vmax;
+    height: max-content;
+    width: 30.0vmax;
+    border: #443266 solid 0.3vmin;
+    background-color: #C3C3E5;
+    box-shadow: 0 0 1.5vmin 0.2vmin #443266;
+}
+
+.screenWrapper{
+    display: flex;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: #443266 solid 0.3vmin;
+    margin-bottom: 0.5vmax;
+    background: #F1F0FF;
+    box-shadow: inset 0 0 1.5vmin 0.2vmin #443266;
+}
+
+#prevScreen{
+    background-color: transparent;
+    min-height: 2.0vmax;
+    width: 28.0vmax;
+    height: max-content;
+    padding: 0.5vmax;
+    text-align: right;
+    font-size: 2.0vmax;
+    color: #443266;
+    word-wrap: break-word;
+}
+
+#ansScreen{
+    background-color: transparent;
+    width: 28.0vmax;
+    min-height: 6.0vmax;
+    height: 100%;
+    color: black;
+    text-align: right;
+    padding: 0.5vmax;
+    font-size: 6.0vmax;
+    word-wrap: break-word;
+}
+
+.buttonsWrapper{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: max-content;
+    border: #443266 solid 0.3vmin;
+    padding: 0.5vmax;
+    box-shadow: inset 0 0 1.0vmin 0.1vmin #443266;
+}
+
+
+button{
+    margin: 0.5vmax;
+    padding: 0.5vmax;
+    width: 6.0vmax;
+    height: 6.0vmax;
+    border: #443266 solid 0.3vmin;
+    background-color: #8C489F;
+    color: #F1F0FF;
+    font-size: 3.0vmax;
+    cursor: pointer;
+    box-shadow: inset 0 0 1.5vmin 0.2vmin #443266;
+
+    &:hover{
+        background-color: #C3C3E5;
+        color: #443266;
+        transform: scale(1.03);
+    }
+
+    &:active{
+        background-color: #443266;
+        color: #F1F0FF;
+        transform: scale(0.9);
+    }
+}
+
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .row1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#clear, 
+#backspace{
+    width: 13.0vmax;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        width: 75.0vw;
+    }
+
+    button{
+        width: 15vw;
+        height: 15vw;
+        font-size: 5vw;
+    }
+
+    #clear, 
+    #backspace{
+        width: 33.0vw;
+    }
+}
